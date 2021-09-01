@@ -5,6 +5,10 @@
   <title>Caculator</title>
   <meta charset="utf-8">
   <style>
+    body {
+margin: 0;
+    }
+
     h1 {
       text-align: center;
       display: inline-block;
@@ -23,6 +27,11 @@
       text-decoration: none;
       display: inline-block;
       width: 10%;
+    }
+    
+    #Sum {
+      text-align: center;
+      font-size: 30px;
     }
   </style>
 </head>
@@ -307,7 +316,7 @@
   
     // 합을 .Sum에 설정해 출력한다.
     let sumElement = document.getElementById('Sum');
-    sumElement.textContent = sum;
+    sumElement.textContent = '총 과금액 : ' + sum + '원';
   </script>
 </body>
 
