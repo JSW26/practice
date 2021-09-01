@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Noogle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="Noogle.css">
+    <style>
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 230px;
+            font-size: 90px;
+            font-weight: 500;
+        }
+
+        h1 span:nth-child(1) {
+            color: #4285fe;
+        }
+
+        h1 span:nth-child(2) {
+            color: #ea4335;
+        }
+
+        h1 span:nth-child(3) {
+            color: #fbbc05;
+        }
+
+        h1 span:nth-child(4) {
+            color: #4285f4;
+        }
+
+        h1 span:nth-child(5) {
+            color: #34a853;
+        }
+
+        h1 span:nth-child(6) {
+            color: #ea4335;
+        }
+
+        .search-bar {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html">Back</a>
+    <h1>
+        <span>N</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+    </h1>
+    <form action="https://www.google.com/search" method="GET">
+        <div class="mx-auto mt-5 search-bar input-group mb-3">
+            <input name="q" type="text" class="form-control rounded-pill" placeholder="Noogle 검색 또는 URL 입력"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+        </div>
+    </form>
+</body>
+
+</html>

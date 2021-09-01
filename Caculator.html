@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>Caculator</title>
+  <meta charset="utf-8">
+  <style>
+    h1 {
+      text-align: center;
+      display: inline-block;
+      width: 80%;
+    }
+
+    table {
+      text-align: center;
+      width: 25%;
+      margin: auto;
+    }
+
+    #Back {
+      font-size: 40px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      width: 10%;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <a href="index.html" id="Back">Back</a>
+    <h1>붕괴3 과금 계산기</h1>
+  </div>
+  <table border="1">
+    <thead>
+      <th>날짜</th>
+      <th>수정,코인</th>
+      <th>금액</th>
+    </thead>
+    <tbody id='ele'>
+      <tr>
+        <td>2019.7.31</td>
+        <td>330수정+월정액</td>
+        <td>6050₩</td>
+      </tr>
+      <tr>
+        <td>2019.10.11</td>
+        <td>부릉냐 종결 리세계</td>
+        <td>50000₩</td>
+      </tr>
+      <tr>
+        <td>2019.11.1</td>
+        <td>330수정+월정액</td>
+        <td>6050₩</td>
+      </tr>
+      <tr>
+        <td>2019.11.15</td>
+        <td>3300+3300수정</td>
+        <td>60500₩</td>
+      </tr>
+      <tr>
+        <td>2019.11.19</td>
+        <td>1320+1320수정</td>
+        <td>20700₩</td>
+      </tr>
+      <tr>
+        <td>2019.11.19</td>
+        <td>6600+6600수정</td>
+        <td>121000₩</td>
+      </tr>
+      <tr>
+        <td>2019.12.2</td>
+        <td>330수정+월정액</td>
+        <td>2550₩</td>
+      </tr>
+      <tr>
+        <td>2019.12.4</td>
+        <td>코인 패키지6</td>
+        <td>18150₩</td>
+      </tr>
+      <tr>
+        <td>2019.12.4</td>
+        <td>코인 패키지2</td>
+        <td>6050₩</td>
+      </tr>
+      <tr>
+        <td>2019.12.22</td>
+        <td>660+660수정</td>
+        <td>12100₩</td>
+      </tr>
+      <tr>
+        <td>2020.1.1</td>
+        <td>330수정+월정액</td>
+        <td>6050₩</td>
+      </tr>
+      <tr>
+        <td>2020.1.1</td>
+        <td>코인 패키지6</td>
+        <td>18150₩</td>
+      </tr>
+      <tr>
+        <td>2020.1.24</td>
+        <td>코인 패키지4</td>
+        <td>60500₩</td>
+      </tr>
+      <tr>
+        <td>2020.1.30</td>
+        <td>330수정</td>
+        <td>6050₩</td>
+      </tr>
+      <tr>
+        <td>2020.1.30</td>
+        <td>코인 패키지3</td>
+        <td>20700₩</td>
+      </tr>
+      <tr>
+        <td>2020.1.30</td>
+        <td>코인 패키지2</td>
+        <td>2550₩</td>
+      </tr>
+      <tr>
+        <td>2020.1.30</td>
+        <td>코인 패키지2</td>
+        <td>6050₩</td>
+      </tr>
+      <tr>
+        <td>2020.2.15</td>
+        <td>330+330수정</td>
+        <td>6050₩</td>
+      </tr>
+      <tr>
+        <td>2020.2.17</td>
+        <td>코인 패키지6</td>
+        <td>18150₩</td>
+      </tr>
+      <tr>
+        <td>2020.2.19</td>
+        <td>코인 패키지6</td>
+        <td>14650₩</td>
+      </tr>
+      <tr>
+        <td>2020.2.28</td>
+        <td>코인 패키지4</td>
+        <td>60500₩</td>
+      </tr>
+      <tr>
+        <td>2020.2.29</td>
+        <td>330수정+월정액</td>
+        <td>6050₩</td>
+      </tr>
+      <tr>
+        <td>2020.3.31</td>
+        <td>330수정+월정액</td>
+        <td>6050₩</td>
+      </tr>
+      <tr>
+        <td>2020.4.7</td>
+        <td>코인 패키지2</td>
+        <td>6050₩</td>
+      </tr>
+      <tr>
+        <td>2020.4.7</td>
+        <td>코인 패키지2</td>
+        <td>6050₩</td>
+      </tr>
+      <tr>
+        <td>2020.4.30</td>
+        <td>330수정+월정액</td>
+        <td>2550₩</td>
+      </tr>
+      <tr>
+        <td>2020.5.11</td>
+        <td>65+65수정</td>
+        <td>1210₩</td>
+      </tr>
+      <tr>
+        <td>2020.5.31</td>
+        <td>코인 패키지2</td>
+        <td>6050₩</td>
+      </tr>
+      <tr>
+        <td>2020.5.31</td>
+        <td>코인 패키지2</td>
+        <td>6050₩</td>
+      </tr>
+      <tr>
+        <td>2020.6.3</td>
+        <td>330수정+월정액</td>
+        <td>6050₩</td>
+      </tr>
+      <tr>
+        <td>2020.7.7</td>
+        <td>330수정+월정액</td>
+        <td>6050₩</td>
+      </tr>
+      <tr>
+        <td>2020.7.7</td>
+        <td>코인 패키지2</td>
+        <td>6050₩</td>
+      </tr>
+      <tr>
+        <td>2020.7.7</td>
+        <td>코인 패키지2</td>
+        <td>6050₩</td>
+      </tr>
+      <tr>
+        <td>2020.8.6</td>
+        <td>330수정+월정액</td>
+        <td>4050₩</td>
+      </tr>
+      <tr>
+        <td>2020.8.12</td>
+        <td>코인 패키지6</td>
+        <td>13150₩</td>
+      </tr>
+      <tr>
+        <td>2020.9.9</td>
+        <td>330수정+월정액</td>
+        <td>3050₩</td>
+      </tr>
+      <tr>
+        <td>2020.10.5</td>
+        <td>코인 패키지2</td>
+        <td>3050₩</td>
+      </tr>
+      <tr>
+        <td>2020.11.1</td>
+        <td>코인 패키지2</td>
+        <td>3050₩</td>
+      </tr>
+      <tr>
+        <td>2020.11.9</td>
+        <td>코인 패키지2</td>
+        <td>3050₩</td>
+      </tr>
+      <tr>
+        <td>2020.11.9</td>
+        <td>코인 패키지1</td>
+        <td>1210₩</td>
+      </tr>
+      <tr>
+        <td>2020.11.12</td>
+        <td>65+65수정</td>
+        <td>1033₩</td>
+      </tr>
+      <tr>
+        <td>2020.11.20</td>
+        <td>코인 패키지6</td>
+        <td>13150₩</td>
+      </tr>
+      <tr>
+        <td>2020.11.20</td>
+        <td>660+660수정</td>
+        <td>12034₩</td>
+      </tr>
+      <tr>
+        <td>2021.8.6</td>
+        <td>330수정+월정액</td>
+        <td>5990₩</td>
+      </tr>
+      <tr>
+        <td>2021.8.10</td>
+        <td>코인 패키지7</td>
+        <td>36240₩</td>
+      </tr>
+      <tr>
+        <td>2021.8.13</td>
+        <td>3300+3300수정</td>
+        <td>60500₩</td>
+      </tr>
+      <tr>
+        <td>2021.8.15</td>
+        <td>코인 패키지2</td>
+        <td>3050₩</td>
+      </tr>
+      <tr>
+        <td>2021.8.16</td>
+        <td>코인 패키지3</td>
+        <td>24200₩</td>
+      </tr>
+    </tbody>
+  </table>
+  <div id='Sum'>not yet</div>
+  <script>
+    /*
+    let rows = document.getElementById('ele').getElementsByTagName('tr');
+    let sum = 0;
+
+    for (let row of rows) {
+      let priceStr = row.children[2].textContent;
+      priceStr = priceStr.substring(0, priceStr.length - 1);
+      let price = parseInt(priceStr);
+      sum = sum + price;
+    }
+
+    let sumElement = document.getElementById('Sum');
+    sumElement.textContent = sum;
+    ↑초기 버전↑
+    */
+
+    // 금액의 합을 구한다.
+    let rows = Array.from(document.getElementById('ele').getElementsByTagName('tr'));
+    let priceStrs = rows.map(row => row.children[2].textContent);
+    let prices = priceStrs.map(str => parseInt(str.substring(0, str.length - 1)));
+    let sum = prices.reduce((acc, p) => acc + p);
+  
+    // 합을 .Sum에 설정해 출력한다.
+    let sumElement = document.getElementById('Sum');
+    sumElement.textContent = sum;
+  </script>
+</body>
+
+</html>
