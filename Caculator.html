@@ -288,9 +288,34 @@ margin: 0;
         <td>코인 패키지3</td>
         <td>24200₩</td>
       </tr>
+      <tr>
+        <td>2021.9.4</td>
+        <td>330수정+월정액</td>
+        <td>3050₩</td>
+      </tr>
+      <tr>
+        <td>2021.9.9</td>
+        <td>6600수정+6600수정</td>
+        <td>116000₩</td>
+      </tr>
+      <tr>
+        <td>2021.9.13</td>
+        <td>1320수정+1320수정</td>
+        <td>23838₩</td>
+      </tr>
+      <tr>
+        <td>2021.9.13</td>
+        <td>330수정+330수정</td>
+        <td>6050₩</td>
+      </tr>
+      <tr>
+        <td>2021.9.16</td>
+        <td>코인패키지5</td>
+        <td>121000₩</td>
+      </tr>
     </tbody>
   </table>
-  <div id='Sum'>not yet</div>
+  <div id='Sum'>Not yet</div>
   <script>
     /*
     let rows = document.getElementById('ele').getElementsByTagName('tr');
@@ -305,7 +330,7 @@ margin: 0;
 
     let sumElement = document.getElementById('Sum');
     sumElement.textContent = sum;
-    ↑초기 버전↑
+    ↑초기 버전
     */
 
     // 금액의 합을 구한다.
@@ -313,11 +338,12 @@ margin: 0;
     let priceStrs = rows.map(row => row.children[2].textContent);
     let prices = priceStrs.map(str => parseInt(str.substring(0, str.length - 1)));
     let sum = prices.reduce((acc, p) => acc + p);
+    let Rsum = sum - 48012
   
     // 합을 .Sum에 설정해 출력한다.
     let sumElement = document.getElementById('Sum');
-    sumElement.textContent = '총 과금액 : ' + sum + '원';
+    sumElement.innerHTML = "이벤트로 차감된 금액 : 48012원" + '<br>' + "∴ 총 과금액 : " + Rsum + "원";
+
   </script>
 </body>
-
 </html>
